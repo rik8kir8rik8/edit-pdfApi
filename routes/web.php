@@ -16,7 +16,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/lamps', 'novelController@index');
-$router->get('/post', 'novelController@post');
+$router->post('/post', 'novelController@post');
 
 $router->post('/p',function() use($router){
     $data = Request::all();

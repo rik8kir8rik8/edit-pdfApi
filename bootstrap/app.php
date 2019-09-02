@@ -97,4 +97,9 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+//crossドメインアクセス許可
+$app->middleware([
+    App\Http\Middleware\CorsMiddleware::class
+ ]);
+
 return $app;
